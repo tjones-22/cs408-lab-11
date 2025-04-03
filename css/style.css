@@ -1,4 +1,134 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+
+*{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
+
+h1{
+  font-size: 50px;
+}
+.error{
+  color:red;
+  text-align: center;
+  font-size: large;
+}
+.hide{
+display: none;
+}
+.load-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+  margin-bottom: 10vh;
+}
+table{
+  margin: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  animation: tableFade 5s;
+  ;
+}
+.inventory-table th {
+  background-color: rgba(190, 186, 186, 0.5);
+  padding: 8px;
+  width:20vw;
+  height:50x;
+}
+.inventory-table td, .inventory-table th {
+  border: 1px solid black;
+  padding: 8px;
+  font-size: 20px;
+}
+.inventory-table button{
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+
+button{
+  padding: 1rem;
+  background-color: rgba(255,0,0,0.5);
+  color: white;
+  border-radius: 20px;
+  font-size: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(0.9);
+}
+
+form{
+  width: 50vw;
+  margin: auto;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height:40vh ;
+
+  border:2px solid black;
+
+}
+h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+.input-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:20vw;
+  font-size: 25px;
+}
+input{
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+@keyframes tableFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-25%);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translateX(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.inventory-table {
+  animation: tableFade 0.6s ease-out;
+}
+  
